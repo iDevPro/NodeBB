@@ -168,7 +168,7 @@ module.exports = function(User) {
 				}, next);
 			},
 			function(next) {
-				file.isFileTypeAllowed(tempPath, next);
+				file.isFileTypeAllowed(data.file.path, next);
 			},
 			function(tempPath, next) {
 				var image = {
